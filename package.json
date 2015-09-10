@@ -2,7 +2,7 @@
   "name": "react-magic-move",
   "version": "0.1.0",
   "description": "MagicMove for React.js",
-  "main": "./modules/index",
+  "main": "./lib/index",
   "repository": {
     "type": "git",
     "url": "https://github.com/rpflorence/react-magic-move.git"
@@ -13,29 +13,21 @@
     "example": "examples"
   },
   "scripts": {
-    "test": "echo 'no tests yet' && exit 0"
+    "test": "echo 'no tests yet' && exit 0",
+    "prepublish": "babel ./modules --out-dir ./lib",
+    "start": "node server.js"
   },
   "authors": [
     "Ryan Florence"
   ],
   "license": "MIT",
   "devDependencies": {
-    "browserify": "4.2.3",
-    "browserify-shim": "^3.8.0",
-    "bundle-loader": "0.5.1",
-    "envify": "1.2.0",
-    "jsx-loader": "0.12.0",
-    "react": "0.12.x",
-    "reactify": "^0.17.1",
-    "rf-release": "0.4.0",
-    "uglify-js": "^2.4.15",
-    "uglifyjs": "^2.3.6",
-    "webpack": "1.4.5",
-    "webpack-dev-server": "1.6.5"
+    "babel-loader": "^5.3.2",
+    "react": "^0.13.3",
+    "webpack": "^1.12.1",
+    "webpack-dev-server": "^1.10.1"
   },
-  "peerDependencies": {
-    "react": "0.12.x"
-  },
+  "peerDependencies": {},
   "tags": [
     "react",
     "animation"

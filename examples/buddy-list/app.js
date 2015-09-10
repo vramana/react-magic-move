@@ -1,4 +1,3 @@
-/** @jsx React.DOM */
 var React = require('react');
 var MagicMove = require('react-magic-move');
 
@@ -84,5 +83,3 @@ function sortBy(key, arr) {
 }
 
 React.render(<App/>, document.getElementById('example'));
-
-
